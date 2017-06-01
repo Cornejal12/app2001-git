@@ -1,0 +1,655 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>primera aplicacion</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema10.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+  
+  <!-- Start WOWSlider.com HEAD section -->
+  <link rel="stylesheet" type="text/css" href="engine2/style.css" />
+  <script type="text/javascript" src="engine2/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+  
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+
+<body onLoad="MM_preloadImages('imagenes/img2.JPG','imagenes/img19.jpg','imagenes/basquetfeme.jpg','imagenes/voli2.jpg','imagenes/bastoneras2.jpg','imagenes/banda2.jpg','imagenes/campodfut.jpg','imagenes/img4.JPG','imagenes/img17.jpg','imagenes/img6.JPG','imagenes/imglogis2.jpg')">
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CBTis No.16</h1> 
+   </div>  
+   <div data-role="main" class="ui-content">
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/img5.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="data1/images/img14.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="data1/images/img7.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="data1/images/img9.jpg" alt="" title="" id="wows1_3"/></li>
+		<li><img src="data1/images/img10.jpg" alt="" title="" id="wows1_4"/></li>
+		<li><img src="data1/images/img1.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/img2.jpg" alt="wow slider" title="" id="wows1_6"/></a></li>
+		<li><img src="data1/images/img17.jpg" alt="" title="" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title=""><span><img src="data1/tooltips/img5.jpg" alt=""/>1</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img14.jpg" alt=""/>2</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img7.jpg" alt=""/>3</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img9.jpg" alt=""/>4</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img10.jpg" alt=""/>5</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img1.jpg" alt=""/>6</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img2.jpg" alt=""/>7</span></a>
+		<a href="#" title=""><span><img src="data1/tooltips/img17.jpg" alt=""/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+   </div>
+     <div> 
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <h2>¿QUIÉNES SOMOS?</h2>
+            <p>Información del CBTis No.16</p>
+          </a>  
+       </li>  
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>CONCURSOS Y PROGRAMAS</h2>
+             <p>Concursos donde participa el CBTis No.16</p>
+           </a>
+       </li> 
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>ESPECIALIDADES</h2>
+             <p>Contamos con 4 Especialidades</p>
+           </a>  
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>BECAS</h2>
+              <p>Becas para los alumnos</p>
+           </a>   
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>DEPORTES Y CULTURA</h2>
+             <p>Grupos deportivos y culturales que ofrece la Institución</p>
+           </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>TITULACIÓN</h2>
+              <p>Información sobre como obtener la Titulación de Ténico</p>
+           </a>   
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>INSTALACIONES</h2>
+              <p>Instalaciones de el CBTis No.16</p>
+           </a>   
+       </li>
+       <li class="ui-first-child ui-last-child">
+           <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>PROGRAMADOR</h2>
+              <p>Datos del desarrollador</p>
+           </a>   
+       </li>
+       </ul>
+     </div>
+     <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+        <div>
+           <img src="res/android/mdpi.png" width="46" height="60">
+        </div>
+        <div>
+          <h4>PROYECTO FINAL</h4>
+          <h4>CORNEJAL SUÁREZ JESÚS</h4>
+        </div>
+     </div>
+   </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>¿QUIÉNES SOMOS?</h1>
+     </div>
+     <div data-role="content" align="center">
+       <div>
+         <h2 style="font-size:36px; text-shadow:3px 1px 1px #333;">Conoce el CBTis No.16</h2>
+         <p style="font-size:20px;">Somos una comunidad con 1500 alumnos en la institución. El CBTis No.16 en sus siglas,que en realidad quiere decir que es un Centro de Bachillerato Tecnológico industrial y de servicios No.16 es una institución de Educación Tecnológica de Nivel Medio Superior dependiente de la Dirección General de Educación Tecnológica Industrial (DGETI), que imparte educación con carácter bivalente, pues es propedéutico terminal. Lo cual significa que el alumno estudia el bachillerato y, al mismo tiempo, como una ventaja adicional, una carrera técnica, que le permite al concluir sus estudios recibir un título de Técnico y además puede ingresar a cualquier institución de nivel superior.</p>
+       </div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/img2.JPG',1)"><img src="imagenes/img14.jpg" width="90%" height="90%" id="Image24"></a>
+<div data-role="main" class="ui-content">
+         <div data-role="collapsible" data-content-theme="false">
+              <h1>HISTORIA DEL PLANTEL</h1>
+               <br>
+              <div> 
+               <p style="font-size:20px;">Se inauguro oficialización el 18 de noviembre de 1963, a cargo del entonces Presidente de la Republica Lic. Adolfo López Mateos, llevando el nombre de “Escuela Técnica Industrial José Ma. Morelos y Pavón”. Hasta 1964, empezó a funcionarla prefectura siendo el primer prefecto el C. Sergio Linares Casanova, agregándose posteriormente el C. Juan de Dios F.C. (1965). En ese mismo año se lleva a cabo la construcción del edificio de Vocacional, que consta de cuatro aulas, tres laboratorios y un salón de dibujo y tribunas. También en ese año Enero(1965), se inicia el primer grupo de Preparatoria Técnica, siendo maestros fundadores como Director el Ing. Francisco Linares Jiménez...</p>
+               <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para seguir conociendo más sobre la historia visite la página siguiente</h2>
+                  <a href="http://www.cbtis016.edu.mx/index.php/plantel/historia-del-plantel" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div> 
+              </div>
+            </div>
+          </div>
+       <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>VENTAJAS QUE OFRECE ESTA MODALIDAD</h1>
+               <br>
+              <div> 
+              <ul style="font-size:20px;" align="left">
+               <li>Educación Escolarizada: Esta modalidad es una formación bivalente, por una parte se egresa con una carrera técnica con los conocimientos, habilidades y                     destrezas para integrarse al sector productivo como técnico profesional y por otra parte ofrece al egresado la posibilidad de continuar sus estudios del nivel superior. </li><hr>
+               <li>Las materias propedéuticas que se cursan son prácticamente las mismas que en el bachillerato general, por lo que se prepara para estudiar una carrera                     profesional del nivel superior.</li><hr>
+               <li>El plan de estudios incluye módulos para la formación tecnológica que te preparan como técnico del nivel medio superior en algunas de las carreras técnicas                 que se ofertan.</li><hr>
+               <li>El componente de formación profesional con 1200 horas: es la formación tecnológica se da a partir del segundo semestre, te preparan como técnico del nivel medio superior, se                    organiza en carreras estructuradas en módulos para desarrollar las competencias profesionales correspondientes al campo de formación profesional de la carrera técnica elegida.                </li><hr>
+              </ul>
+              </div>
+            </div>
+          </div>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>MISIÓN Y VISIÓN</h1>
+               <br>
+              <div> 
+               <h2 style="font-size:36px; text-shadow:3px 1px 1px #333;">Misión</h2>
+                  <p style="font-size:20px;">Formar personas con conocimientos tecnológicos en las áreas industrial, comercial y                    de servicios, a través de la preparación de profesionales técnicos y bachilleres, con el fin de contribuir al                    desarrollo sustentable del país.</p>
+                   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','imagenes/img19.jpg',1)"><img src="imagenes/img20.jpg" width="100%" height="140%" id="Image41"></a>
+               <hr>
+               <h2 style="font-size:36px; text-shadow:3px 1px 1px #333;">Visión</h2>
+               <p style="font-size:20px;">Ser una institución que proporcione una formación integral y pertinente de acuerdo a las exigencias derivadas de la competitividad mundial y el entorno y vocación local, además de tener la flexibilidad para satisfacer los intereses, aspiraciones y posibilidades de la población que demanda este nivel educativo en nuestro plantel.</p>
+              </div>
+            </div>
+          </div>
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>UBICACIÓN</h1>
+               <br>
+              <div> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.6309103723297!2d-98.4265975845402!3d18.903448287187125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb47405555555%3A0x19bb49f598a8846f!2sCBTis+No+016!5e0!3m2!1ses!2smx!4v1496242283666" width="600" height="450" frameborder="0" style="border:0" align="middle" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+     <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>PROYECTO FINAL</h4>
+        <h4>CORNEJAL SUÁREZ JESÚS</h4>
+     </div>
+   </div>
+ </div>
+ 
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>CONCURSOS Y PROGRAMAS</h1>
+       </div>
+       <div data-role="content" align="center">
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>CONCURSO NACIONAL DE PROTOTIPOS</h1>
+               <br>
+              <div>
+              <h2 style="font-size:36px; text-shadow:3px 1px 1px #333;">Prototipos</h2>
+               <p style="font-size:20px;">Este es un Evento académico de gran relevancia cuyo objetivo es fomentar la creación y la divulgación de la cultura científica en alumnos y docentes de la DGETI, creando un espacio destinado al intercambio de experiencias, conocimientos y prácticas, así como de difusión para los proyectos de investigación y prototipos tecnológicos; se considera un espacio representativo de gran trascendencia institucional, en el cual la creatividad, la imaginación y la capacidad inventiva de la comunidad académica queda de manifiesto al elaborar y desarrollar investigaciones y prototipos que impulsan la ciencia y la tecnología, consolidándose como una práctica común académica en los planteles, que promueve la interacción entre alumnos y docentes, creando experiencias enriquecedoras. </p>
+               <img style="border-radius:20px;" src="imagenes/imgprotipos.jpg" width="100%" height="110%">
+              </div> 
+            </div>
+          </div>
+        </div> 
+        
+        <div data-role="content" align="center">
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>ENCUENTRO NACIONAL DE ARTE Y CULTURA ENAC</h1>
+               <br>
+              <div>
+               <h2 style="font-size:36px; text-shadow:3px 1px 1px #333;">ENAC</h2>
+               <p style="font-size:20px;">El Encuentro Nacional de Arte y Cultura (ENAC) en uno de los eventos culturales más importantes a nivel nacional, en el que participan las 31 entidades federativas y el Distrito Federal, con lo que se refuerza el objetivo de ofrecer educación integral y de calidad a la sociedad. La DGETI impulsa la educación integral, y para lograr ese objetivo organiza el Encuentro Nacional de Arte y Cultura, como el factor condicionante para promover entre su comunidad estudiantil, el rescate de las más diversas expresiones artístico-culturales.Evento donde se intercambian experiencias, conocimiento y las más diversas demostraciones de arte y cultura popular </p>
+               <img  style="border-radius:20px;" src="imagenes/enac.jpg" width="90%" height="90%">
+              </div> 
+            </div>
+          </div>
+        </div> 
+        
+        <div data-role="content" align="center">
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>FESTIVAL ACADEMICO</h1>
+               <br>
+              <div>
+               <h2 style="font-size:36px; text-shadow:3px 1px 1px #333;">Festival Academico</h2>
+               <p style="font-size:20px;">El Festival se constituye como el evento académico por excelencia en la DGETI bajo el marco de la Reforma Integral de la Educación Media Superior, son convocados nuestros alumnos a competir en la demostración de las competencias genéricas y disciplinares adquiridas en el aula. Se comprende de etapas eliminatorias de forma local, estatal y a nivel nacional.</p>
+               <img  style="border-radius:20px;" src="imagenes/fesival.jpg" width="90%" height="90%">
+              </div> 
+            </div>
+          </div>
+        </div> 
+         <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>PROYECTO FINAL</h4>
+            <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+       </div>
+    </div>
+    
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>ESPECIALIDADES</h1>
+       </div>
+       <div data-role="main" class="ui-content">
+       <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/imgelec.jpg" alt="electricidad" title="electricidad" id="wows2_0"/></li>
+		<li><img src="data2/images/imgelec2.jpg" alt="electricidad" title="electricidad" id="wows2_1"/></li>
+		<li><img src="data2/images/imglogis.jpg" alt="logística" title="logística" id="wows2_2"/></li>
+		<li><img src="data2/images/imglogis2.jpg" alt="logística" title="logística" id="wows2_3"/></li>
+		<li><img src="data2/images/imgmeca.jpg" alt="mecánica" title="mecánica" id="wows2_4"/></li>
+		<li><img src="data2/images/imgmeca2.jpg" alt="mecánica" title="mecánica" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data2/images/imgpro.jpg" alt="image slider" title="programación" id="wows2_6"/></a></li>
+		<li><img src="data2/images/imgpro2.jpg" alt="programación" title="programación" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="electricidad"><span><img src="data2/tooltips/imgelec.jpg" alt="electricidad"/>1</span></a>
+		<a href="#" title="electricidad"><span><img src="data2/tooltips/imgelec2.jpg" alt="electricidad"/>2</span></a>
+		<a href="#" title="logística"><span><img src="data2/tooltips/imglogis.jpg" alt="logística"/>3</span></a>
+		<a href="#" title="logística"><span><img src="data2/tooltips/imglogis2.jpg" alt="logística"/>4</span></a>
+		<a href="#" title="mecánica"><span><img src="data2/tooltips/imgmeca.jpg" alt="mecánica"/>5</span></a>
+		<a href="#" title="mecánica"><span><img src="data2/tooltips/imgmeca2.jpg" alt="mecánica"/>6</span></a>
+		<a href="#" title="programación"><span><img src="data2/tooltips/imgpro.jpg" alt="programación"/>7</span></a>
+		<a href="#" title="programación"><span><img src="data2/tooltips/imgpro2.jpg" alt="programación"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+       </div>
+       <div data-role="content" align="center">
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>PROGRAMACIÓN</h1>
+               <br>
+              <div> 
+               <h1 style="text-shadow:3px 1px 1px #333;">Técnico en Programación</h1>
+                <p style="font-size:20px;">Persona con conocimientos, habilidades y actitudes, capaz de ingresar a empresas de desarrollo de software, diseño gráfico, mantenimiento, outsourcing.</p>
+                <h2>Competencias Profesionales</h2>
+               <img style="border-radius:20px;" src="imagenes/programacion.jpg" width="110%" height="114%"> 
+                <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para más información de la especialidad visite la página siguiente</h2>
+                  <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/programacion" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div> 
+              </div>
+            </div>
+          </div>
+          
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>LOGÍSTICA</h1>
+               <br>
+              <div> 
+                <h1 style="text-shadow:3px 1px 1px #333;">Técnico en Logística</h1>
+                <p  style="font-size:20px;">Ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a la administración de bienes, planificando los suministros destinados al almacenamiento de manera manual y electrónica, la organización de los nodos logísticos para el transporte de mercancías, así como proveer los servicios y atención al cliente sobre los movimientos y los costos de la cadena logística.</p>
+                 <h2>Competencias Profesionales</h2>
+               <img style="border-radius:20px;" src="imagenes/logistica.jpg" width="110%" height="140%">
+                <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para más información de la especialidad visite la página siguiente</h2>
+                  <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/logistica" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>ELECTRICIDAD</h1>
+               <br>
+              <div> 
+                <h1 style="text-shadow:3px 1px 1px #333;">Técnico en Electricidad</h1>
+                <p style="font-size:20px;">La carrera de Técnico en Electricidad permite al estudiante sustentar la demanda de ocupación de Técnicos Electricistas en el sector productivo y de servicios, capaz de diseñar y realizar instalaciones eléctricas residenciales y comerciales, así como proporcionar mantenimiento a máquinas eléctricas.</p>
+                 <h2>Competencias Profesionales</h2>
+               <img style="border-radius:20px;" src="imagenes/electricidad.JPG" width="110%" height="140%">
+                <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para más información de la especialidad visite la página siguiente</h2>
+                  <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/electricidad" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>MECÁNICA INDUSTRIAL</h1>
+               <br>
+              <div> 
+               <h1 style="text-shadow:3px 1px 1px #333;">Técnico en Mecánica Industrial</h1>
+               <p style="font-size:20px;">Profesionista que da mantenimiento a los sistemas de transmisión de potencia utilizando las máquinas herramientas convencionales, de control numérico, máquinas de soldar con arco eléctrico y oxigas auxiliándose de los procesos de ajuste de piezas mecánicas.</p>
+               <h2>Competencias Profesionales</h2>
+               <img style="border-radius:20px;" src="imagenes/mecanica.jpg" width="110%" height="140%">
+                <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="left">Para más información de la especialidad visite la página siguiente</h2>
+                  <a href="http://www.cbtis016.edu.mx/index.php/oferta-educativa/mecanica-industrial" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div> 
+         <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>PROYECTO FINAL</h4>
+            <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+      </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>BECAS</h1>
+       </div>
+       <div data-role="content" align="center">  
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>PROSPERA PROGRAMA DE INCLUSIÓN SOCIAL</h1>
+               <br>
+              <div> 
+                <h1  style="text-shadow:3px 1px 1px #333;">Prospera</h1>
+              <p style="font-size:20px;">Programa de Inclusión Social tiene como objetivo: Contribuir a fortalecer el cumplimiento            efectivo de los derechos sociales que potencien las capacidades de las personas en situación de pobreza a través de            acciones que amplían el desarrollo de sus capacidades en alimentación, salud y educación y el acceso a otras            dimensiones de bienestar para coadyuvar a la ruptura del ciclo intergeneracional de la pobreza. En Prospera participan            los gobiernos: Federal, Estatal y Municipal, así como los sectores: SEDESOL, SEP, Salud, Economía, SAGARPA, CONAFE e            IMMS. Para la identificación de la familias beneficiarias PROSPERA cuenta con un riguroso sistema de selección basado            en las características socioeconómicas y demográficas del hogar. El Componente Educativo de PROSPERA otorga becas y            apoyos para la adquisición de útiles escolares.</p>
+           <img   style="border-radius:20px;" src="imagenes/prospera.jpg"  width="90%" height="90%">
+           <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para más información visite la página siguiente</h2>
+                  <a href="http://www.gob.mx/prospera" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div>
+           </div>  
+              </div>
+            </div>
+            
+             <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>BECA CONTRA EL ABANDONO ESCOLAR</h1>
+               <br>
+              <div> 
+                <h1  style="text-shadow:3px 1px 1px #333;">Abandono escolar</h1>
+           <img style="border-radius:20px;" src="imagenes/abandono.jpg"  width="100%" height="140%">
+           <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para más información visite la página siguiente</h2>
+                  <a href="http://www.becasmediasuperior.sep.gob.mx/beca-contra-abandono" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div>
+           </div>  
+              </div>
+            </div>
+            
+                <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>BECA DE FORMACIÓN DUAL</h1>
+               <br>
+              <div> 
+                <h1  style="text-shadow:3px 1px 1px #333;">Formación dual</h1>
+           <img   style="border-radius:20px;" src="imagenes/dual.jpg"  width="100%" height="140%">
+           <div style="width:40%;">
+                <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+                 <li class="ui-first-child ui-last-child">
+                  <h2 style="color:#F9E79F;" align="center">Para más información visite la página siguiente</h2>
+                  <a href="http://www.becasmediasuperior.sep.gob.mx/beca-dual" target="_self" data-role="button">
+                   <h2>Click</h2>
+                  </a>
+                 </li> 
+                </ul>
+              </div>
+           </div>  
+              </div>
+            </div>
+          </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+            <h4>PROYECTO FINAL</h4>
+            <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+       </div>
+    </div>
+   
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>DEPORTES Y CULTURA</h1>
+       </div>
+       <div data-role="content" align="center">
+           <div>
+             <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>BÁSQUETBOL MASCULINO Y FEMENINO</h1>
+               <br>
+              <div> 
+                <h1 style="text-shadow:3px 1px 1px #333;">Equipo masculino y femenil</h1>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image49','','imagenes/basquetfeme.jpg',1)"><img src="imagenes/basquet.jpg" width="100%" height="110%" id="Image49"></a> 
+              </div>
+            </div>
+          </div>
+          
+              <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>VOLEIBOL</h1>
+               <br>
+              <div> 
+                <h1 style="text-shadow:3px 1px 1px #333;">Equipo femenil</h1>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image50','','imagenes/voli2.jpg',1)"><img src="imagenes/voli.jpg" width="100%" height="110%" id="Image50"></a> 
+               </div>
+            </div>
+          </div>
+          
+             <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>BASTONERAS</h1>
+               <br>
+              <div> 
+                <h1 style="text-shadow:3px 1px 1px #333;">Participación de batoneras el 16 de septiembre</h1>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image51','','imagenes/bastoneras2.jpg',1)"><img src="imagenes/bastoneras.jpg" width="100%" height="110%" id="Image51"></a> 
+               </div>
+            </div>
+          </div>
+          
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>BANDA DE GUERRA</h1>
+               <br>
+              <div> 
+                <h1 style="text-shadow:3px 1px 1px #333;">Participación de banda de guerra el 16 de septiembre</h1>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image52','','imagenes/banda2.jpg',1)"><img src="imagenes/banda.jpg" width="100%" height="110%" id="Image52"></a> 
+              </div>
+          </div>
+           </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>PROYECTO FINAL</h4>
+           <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+      </div>
+    </div>
+  </div>
+    
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>TITULACIÓN</h1>
+       </div>
+       <div data-role="content" align="center">
+           <div>
+             <h1 style="text-shadow:3px 1px 1px #333;">REQUISITOS PARA TITULACIÓN</h1>
+             <ul style="font-size:20px;" align="left">
+               <li>ORIGINAL Y 3 COPIAS DEL ACTA DE NACIMIENTO DEL INTERESADO
+               <li>3 COPIAS DEL CURP AL 175% EN VERTICAL
+               <li>3 COPIAS DEL CERTIFICADO DE TERMINACIÓN DE ESTUDIOS DEL CBTis, POR AMBOS LADOS. (PROMEDIO MINIMO DE 8 EN CADA                         UNO DE LOS MODULOS PARA TITULACION AUTOMATICA)
+               <li>3 COPIAS DEL CERTIFICADO DE TERMINACIÓN DE ESTUDIOS DE LA SECUNDARIA, POR AMBOS LADOS.
+               <li>COPIA DE LA CONSTANCIA DE SERVICIO SOCIAL
+               <li>COPIA DE LA CONSTANCIA DE PRACTICAS PROFESIONALES
+               <li>COPIA DE LAS 5 CARTAS DE COMPETENCIA (GEN 07 EN ADELANTE)
+               <li>6 FOTOGRAFIAS TAMAÑO INFANTIL BLANCO Y NEGRO DEL INTERESADO, FONDO BLANCO, ROPA CLARA, PAPEL AUTOADERIBLE (POR                      EL REVERSO ANOTAR NOMBRE COMPLETO CON LAPIZ, SIN REMARCAR, EMPEZANDO POR LOS APELLIDOS).
+               <li>6 FOTOGRAFIAS TAMAÑO DIPLOMA DEL INTERESADO FONDO BLANCO, ROPA CLARA, PAPEL AUTOADERIBLE (POR EL REVERSO ANOTAR                        NOMBRE COMPLETO CON LAPIZ, SIN REMARCAR, EMPEZANDO POR LOS APELLIDOS).
+               <li>COLOCAR TODOS LOS DOCUMENTOS (CONFORME AL ORDEN ANTERIOR) EN UNA CARPETA TAMAÑO CARTA CON EL NOMBRE COMPLETO EN                   LA PESTAÑA, EMPEZANDO POR LOS APELLIDOS.
+              </ul>
+              <p style="font-size:17px;" align="center">NOTA: QUIEN NO CUMPLA CON EL PROMEDIO, O AUN TENIENDOLO SIN LAS 5 CARTAS                    DE COMPETENCIA, DEBERA SOLICITAR POR ESCRITO A UN DOCENTE DE LA ESPECIALIDAD CURSADA QUE LO ASESORE PARA LA                    ELABORACION DE UN PROYECTO.
+               EL ALUMNO DEBERA PRESENTAR LA SOLICITUD Y EL PROYECTO JUNTO CON LOS REQUISITOS ANTES MENCIONADOS.</p>
+           </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>PROYECTO FINAL</h4>
+           <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+       </div>
+    </div>
+    
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>INSTALACIONES</h1>
+       </div>
+       <div data-role="content" align="center">
+               <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>AREAS VERDES</h1>
+               <br>
+              <div> 
+                <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9000','','imagenes/img4.JPG',1)"><img src="imagenes/img2.JPG" width="100%" height="110%" id="Image9000"></a> 
+                </div>
+            </div>
+          </div>
+          
+            <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>CANCHA DE FUTBOL Y BASQUETBOL</h1>
+               <br>
+              <div>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image200','','imagenes/img17.jpg',1)"><img src="imagenes/campodfut.jpg" width="100%" height="110%" id="Image200"></a>
+               </div>
+            </div>
+          </div>
+          
+           <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>SALA AUDIOVISUAL</h1>
+               <br>
+              <div>
+               <img src="imagenes/img5.JPG"  width="100%" height="110%">
+               </div>
+            </div>
+          </div>
+           
+          <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>PATIO CÍVICO</h1>
+               <br>
+              <div>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image700','','imagenes/img6.JPG',1)"><img src="imagenes/img7.jpg" width="100%" height="110%" id="Image700"></a> </div>
+            </div>
+          </div>
+          
+            <div data-role="main" class="ui-content">
+            <div data-role="collapsible" data-content-theme="false">
+              <h1>AULAS</h1>
+               <br>
+              <div>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image701','','imagenes/imglogis2.jpg',1)"><img src="imagenes/aula.jpg" width="100%" height="110%" id="Image701"></a>
+               </div>
+            </div>
+          </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>PROYECTO FINAL</h4>
+           <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+       </div>
+    </div>
+    
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+       <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>PROGRAMADOR</h1>
+       </div>
+       <div data-role="content" align="center">
+           <div style=" border:3px double #FFF;">
+           <ul style="font-size:13px; text-align:center;">
+             <h1 style="font-size:30px; text-shadow:3px 1px 1px #333;">Datos del desarrollador</h1>
+             <h2 align="center">Alumno:</h2> 
+             <h2 align="center">Cornejal Suárez Jesús</h2>
+             <h2 align="center"> Semestre y grupo:</h2>
+             <h2 align="center">4 F </h2>
+             <h2 align="center">Submodulo:</h2>
+             <h2 align="center">Desarrolla aplicaciones moviles</h2>
+             <h2 align="center">Docente:</h2>
+             <h2 align="center">Lic. José Antonio Gómez Hernández</h2>
+            </ul>
+           </div>
+         <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>PROYECTO FINAL</h4>
+           <h4>CORNEJAL SUÁREZ JESÚS</h4>
+         </div>  
+       </div>
+    </div>
+</body>
+</html>
